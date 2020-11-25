@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/234c78cbb2.js" crossorigin="anonymous"></script>
     <style>
+        /*styling for the project images, to have consistent sizes*/
         img{
             width: 300px;
             height: 300px;
         }
 
+        /*styling for the resume download button*/
         button {
+            /*will have button in the middle of the page, below the scrolling textbox*/
             border: none;
             text-align: middle;
             font-size: 20px;
@@ -28,6 +31,7 @@
 </head>
 <body>
 <!--    create the horizontal navigation menu bar (with the index/home page being denoted with the home icon from fontawesome.com-->
+<!--    reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/-->
     <div class="navMenu">
         <a class = "active" href="index.html"><i class="fas fa-home"></i></a>
         <div class="navMenu-right">
@@ -41,7 +45,9 @@
 
     <div class="projectsList">
         <h2>What I've Been Working On...</h2>
-<!--        unordered list containing information about my CS projects-->
+<!--        unordered list containing information about my CS projects, that is contained in a scroll text box-->
+<!--        allows user to click on the title of the project and is moved to github page-->
+<!--        reference: https://www.w3schools.com/cssref/pr_pos_overflow.asp-->
         <ul>
             <li class="project"><a href="https://github.com/judylee05/Cavern_Cookeries">CAVERN COOKERIES</a>
                 <ul>
@@ -80,8 +86,10 @@
         </ul>
     </div><br>
 
+<!--    create a download button to allow user to download my resume-->
+<!--    reference: https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/-->
     <div class="resumeDownload">
-        <!--        ref - https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/-->
+<!--        will customize the look of the download button-->
         <a href="JudyLee_Resume.pdf" download="JudyLee_Resume.pdf" style="text-decoration:none">
             <button type="button">Download Resume</button>
         </a>

@@ -15,14 +15,10 @@ function increaseTextBox(){
 // initialize myTimer and slideIndex
 var slideIndex = 1;
 var myTimer;
-var slideshowContainer;
 
 window.addEventListener("load",function() {
     showSlides(slideIndex);
     myTimer = setInterval(function(){plusSlides(1)}, 4000);
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
 })
 
 
@@ -74,13 +70,5 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
 }
 
-pause = () => {
-    clearInterval(myTimer);
-}
-
-resume = () =>{
-    clearInterval(myTimer);
-    myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
-}
 
 increaseTextBox()
