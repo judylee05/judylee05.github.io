@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/234c78cbb2.js" crossorigin="anonymous"></script>
     <script src="project.js"></script>
+    <style>
+        p, label{
+            font-size: 24px;
+        }
+    </style>
 
 </head>
 <body>
+<!--    create the horizontal navigation menu bar (with the index/home page being denoted with the home icon from fontawesome.com-->
     <div class="navMenu">
         <a class = "active" href="index.html"><i class="fas fa-home"></i></a>
         <div class="navMenu-right">
@@ -18,8 +24,8 @@
         </div>
     </div>
 
-    <h1>Contact Page</h1>
-
+    <h1>Contact Me</h1>
+<!--    allow users to click on icons (from fontawesome.com) and be redirected to outside links-->
     <div class="outsideLinks">
         <p>Find me at:</p>
 
@@ -32,7 +38,6 @@
             <button class="linkButton">
                 <i class="fab fa-linkedin"></i>
             </button></a>
-
 
         <a href="https://devpost.com/judylee05">
             <button class="linkButton">
@@ -66,7 +71,7 @@
             <label>Message:
                 <input type="text" name="messageInput" id="messageInput">
             </label><br>
-
+            <br>
             <input type="submit" id="postSubmit">
         </fieldset>
     </form>

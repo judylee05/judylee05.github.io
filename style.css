@@ -1,12 +1,13 @@
 
 /*!*navigation bar styling*!*/
 /*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
-
 .navMenu{
     background-color: #272343;
     overflow: hidden;
 }
 
+/*!*navigation bar styling*!*/
+/*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
 .navMenu a{
     float:left;
     text-align:center;
@@ -16,14 +17,21 @@
     color: #fffffe;
 }
 
+/*!*navigation bar styling*!*/
+/*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
 .navMenu a:hover{
+    /*change the color of the navigation menu when mouse is hovering (to yellow)*/
     background-color: #ffd803;
 }
 
+/*!*navigation bar styling*!*/
+/*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
 .navMenu-right{
     float: right;
 }
 
+/*!*navigation bar styling*!*/
+/*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
 .linkButton{
     border: none;
     font-size: 30px;
@@ -33,6 +41,13 @@
     cursor: pointer;
 }
 
+/*paragraph styling for the reference text found at the bottom of pages with images*/
+.picReference{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
 /*index.html - center the text*/
 .intro{
     display: block;
@@ -40,13 +55,24 @@
     text-align: center;
 }
 
-/*index.html - get rid of bullet points in list*/
+/*index.html - bold "Hi! I'm Judy" portion*/
+.intro p{
+    font-size: 50px;
+    font-weight: bold;
+    color: #232323;
+}
+
+/*index.html - alter the unordered list entries*/
 .intro ul{
+    font-size: 32px;
+    font-style: italic;
+    color: #078080;
+    /*get rid of bullet point styling*/
     list-style: none;
 }
 
 /*portfolio.html - textbox overflow*/
-/*https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
+/*reference: https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
 .projectsList{
     /*center the textbox*/
     display: block;
@@ -59,19 +85,24 @@
     overflow: scroll;
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .slideshow-container {
     max-width: 800px;
     position: relative;
     margin: auto
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .mySlides {
     display: none;
     height: 400px;
     border: solid 1px black;
-
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .prev,
 .next {
     cursor: pointer;
@@ -87,22 +118,30 @@
     border-radius: 0 3px 3px 0
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .next {
     right: -50px;
     border-radius: 3px 3px 3px 3px
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .prev {
     left: -50px;
     border-radius: 3px 3px 3px 3px
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .prev:hover,
 .next:hover {
     color: #f2f2f2;
     background-color: rgba(0, 0, 0, 0.8)
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -115,6 +154,8 @@
     background-color: #222428
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -123,6 +164,8 @@
     top: 0
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .dot {
     cursor: pointer;
     height: 15px;
@@ -134,6 +177,8 @@
     transition: background-color .6s ease
 }
 
+/*index.html - CSS for the carousel*/
+/*reference: Matthew Croak (https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9)*/
 .active,
 .dot:hover {
     background-color: #717171
