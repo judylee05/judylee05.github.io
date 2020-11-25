@@ -9,6 +9,7 @@ function increaseTextBox(){
 }
 
 
+
 // code below is for the carousel on the home page (index.html), which includes the plusSlides, currentSlide, and showSlides functions
 // referenced Matthew Croak's code at https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9
 
