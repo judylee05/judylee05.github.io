@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/234c78cbb2.js" crossorigin="anonymous"></script>
+    <style>
+        /*will keep the carousel pictures consistent size (resize b/c original too big)*/
+        img{
+            width: 800px;
+            height: 350px;
+        }
+    </style>
+    <script src="project.js"></script>
+
+</head>
+<body>
+    <div class="navMenu">
+        <a class = "active" href="index.html"><i class="fas fa-home"></i></a>
+        <div class="navMenu-right">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <div class="intro">
+        <p>Hi! I'm Judy</p>
+        <ul>
+            <li> CS Student at Oregon State University</li>
+            <li> Hopeful Future Software Developer/Engineer</li>
+            <li> Avid Video Game Enthusiast & MMORPG Raider </li>
+        </ul>
+    </div>
+
+
+<!--    code for carousel (can be changed manually AND automatically)-->
+<!--    referenced Matthew Croak's code at https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9-->
+
+    <div class="slideshow-container">
+        <div class="slideshow-inner">
+            <div class="mySlides fade">
+
+                <img  src='images/car1.png' alt="carousel1"/>
+                <div class="text">Cavern Cookeries</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img  src='images/car2.png' alt="carousel2"/>
+                <div class="text">Xiangqi Game</div>
+            </div>
+
+            <div class="mySlides fade">
+
+                <img  src='images/car3.png' alt="carousel3"/>
+                <div class="text">Community Request Board</div>
+            </div>
+
+        </div>
+
+
+        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+    <br/>
+
+
+    <div style='text-align: center;'>
+        <span class="dot" onclick='currentSlide(1)'></span>
+        <span class="dot" onclick='currentSlide(2)'></span>
+        <span class="dot" onclick='currentSlide(3)'></span>
+    </div>
+
+    </div>
+
+</body>
+<script src="project.js"></script>
+</html>

@@ -1,0 +1,140 @@
+
+/*!*navigation bar styling*!*/
+/*!* reference: https://www.w3schools.com/css/css_navbar_horizontal.asp & https://www.w3schools.com/howto/howto_css_topnav_right.asp *!*/
+
+.navMenu{
+    background-color: #272343;
+    overflow: hidden;
+}
+
+.navMenu a{
+    float:left;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fffffe;
+}
+
+.navMenu a:hover{
+    background-color: #ffd803;
+}
+
+.navMenu-right{
+    float: right;
+}
+
+.linkButton{
+    border: none;
+    font-size: 30px;
+    color: white;
+    background-color: darkslateblue;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+/*index.html - center the text*/
+.intro{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/*index.html - get rid of bullet points in list*/
+.intro ul{
+    list-style: none;
+}
+
+/*portfolio.html - textbox overflow*/
+/*https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
+.projectsList{
+    /*center the textbox*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*textbox properties*/
+    width: 1000px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+    height: 400px;
+    border: solid 1px black;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}

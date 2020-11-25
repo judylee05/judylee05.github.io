@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/234c78cbb2.js" crossorigin="anonymous"></script>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+
+        button {
+            border: none;
+            text-align: middle;
+            font-size: 20px;
+            padding: 14px 28px;
+            color: white;
+            background-color: crimson;
+            width: 15%;
+            margin: auto;
+            display: block;
+        }
+
+        p {
+            font-size: 12px;
+            font-style: italic;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="navMenu">
+        <a class = "active" href="index.html"><i class="fas fa-home"></i></a>
+        <div class="navMenu-right">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <h1>Portfolio Page</h1>
+
+
+    <div class="projectsList">
+        <h2>My Projects</h2>
+        <ul>
+            <li class="project"><a href="https://github.com/judylee05/Cavern_Cookeries">Cavern Cookeries</a>
+                <ul>
+                    <li>Language(s): Python</li>
+                    <li>Text-based RPG game that allows the user to explore levels within a cavern, where they can slay monsters, harvest drops, and create a delicious dish</li>
+                    <li>Utilizes a turn-based combat system and ASCII-like graphics</li>
+                    <img src="images/cc1.PNG" alt="Cavern Cookeries Exploration 1">
+                    <img src="images/cc2.PNG" alt="Cavern Cookeries Battle 1">
+                    <img src="images/cc3.PNG" alt="Cavern Cookeries Battle 2">
+                    <img src="images/cc4.PNG" alt="Cavern Cookeries Exploration 2">
+
+                </ul>
+            </li>
+
+            <br>
+
+            <li class="project"><a href="https://devpost.com/software/community-request-board">Community Request Board</a>
+                <ul>
+                    <li>Language(s): Python, SQL</li>
+                    <li>Award: BeaverHacks Spring 2020 – 1st Place Winner for New Student Category</li>
+                    <li>Hackathon project that creates a local community request board where users can publish requests and mark-off completed requests from other community members</li>
+                    <li>Uses SQL to save registered users’ information and requests posted on the board</li>
+                    <img src="images/cb1.PNG" alt="Front Page">
+                    <img src="images/cb2.PNG" alt="User Registration">
+                </ul>
+            </li>
+
+            <br>
+
+            <li class="project"><a href="https://github.com/judylee05/Xiangqi">Xiangqi</a></li>
+                <ul>
+                    <li>Language(s):Python</li>
+                    <li>Allows two users to play a game of Xiangqi in the terminal</li>
+                    <li>Object-oriented implementation using board and piece classes</li>
+                    <img src="images/g1.PNG" alt="XQ 1">
+                    <img src="images/g2.PNG" alt="XQ 2">
+                    <img src="images/g3.PNG" alt="XQ 3">
+                    <img src="images/g4.PNG" alt="XQ 4">
+
+
+                </ul>
+
+        </ul>
+    </div>
+
+    <div class="resumeDownload">
+        <!--        ref - https://www.geeksforgeeks.org/how-to-trigger-a-file-download-when-clicking-an-html-button-or-javascript/-->
+        <a href="JudyLee_Resume.pdf" download="JudyLee_Resume.pdf" style="text-decoration:none">
+            <button type="button">Download Resume</button>
+        </a>
+    </div>
+
+    <p>All images are owned by Jung Min (Judy) Lee and from my Github page</p>
+
+
+</body>
+</html>
