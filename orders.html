@@ -13,17 +13,30 @@
         <nav>
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="orders.html">Manage Orders</a></li>
-                <li><a href="customers.html"> Manage Customers</a></li>
-                <li><a href="payments.html"> Manage Payments</a></li>
-                <li><a href="experiences.html"> Manage Experiences</a></li>
-                <li><a href="alpacas.html">Manage Alpacas</a></li>
-                <li><a href="experiences_alpacas.html">Manage Experiences-Alpacas</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="customers.html"> Customers</a></li>
+                <li><a href="payments.html"> Payments</a></li>
+                <li><a href="experiences.html"> Experiences</a></li>
+                <li><a href="alpacas.html"> Alpacas</a></li>
+                <li><a href="experiences_alpacas.html">Experiences-Alpacas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <!-- Search -->
+        <form action="#" method="POST" class="search">
+            <fieldset>
+                <label>Search Order by Customer Name: 
+                    <input type="text" name="cus_name" value="Clark Kent">
+                </label>
+                <input type="submit" value="Search" class = "button" id="submitBtn">
+            </fieldset>
+        </form>
+
+        <!-- Order Form -->
+
         <form action="#" method="POST">
             <fieldset>
                 <legend> Order Information</legend>
@@ -55,6 +68,7 @@
                 <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
             </fieldset>
         </form>
+
         <br>
         <table>
             <thead>
@@ -90,6 +104,33 @@
                 </tr>
             </tbody>
         </table>
+
+        <h3> search results: </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Experience + Alpaca</th>
+                    <th>Payment Type</th>
+                    <th>Ticket Quantity</th>
+                    <th>Order Date</th>
+                    <th>Order Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clark Kent</td>
+                    <td>Photo with Cupcake</td>
+                    <td>Paypal</td>
+                    <td>2</td>
+                    <td>2021-01-21</td>
+                    <td>$30.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
     </main>
 
     <footer>

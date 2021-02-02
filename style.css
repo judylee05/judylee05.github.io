@@ -1,3 +1,56 @@
-table, th, td {
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+/*  Menu */
+ul {
+    list-style: none;
+    text-align: center;
+  }
+
+.nav li {
+    display: inline-block;
+    margin-left: 1em;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: chocolate;
+    text-decoration: underline;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+/* Images */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+
+/* tables and forms */ 
+
+th, td {
     border: 1px solid #333;
+}
+
+.search fieldset {
+  border: 0px;
+}
+
+.search {
+  margin-bottom: 2em;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
 }
