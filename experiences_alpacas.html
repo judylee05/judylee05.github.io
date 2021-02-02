@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Family Alpaca Ranch</title>
+    <title>Manage Experiences-Alpacas</title>
 </head>
 <body>
     <header>
-        <h1>Happy Family Alpaca Ranch</h1>
+        <h1>Manage Experiences-Alpacas</h1>
         <!--Horizontal Menu-->
         <nav>
             <ul class="nav">
@@ -22,15 +22,28 @@
     </header>
 
     <main>
-        <div class="pictures">
-            <img src="cute alpaca.jpeg" alt="cute alpaca" width="1000"/>
-            <img src="alpacas.jpg" alt="alpacas" width="1000"/>
-        </div>        
+      <form action="#" method="POST">
+        <fieldset>
+          <legend> Experiences-Alpaca Information</legend>
+              
+          <label>Experience ID
+            <input type="number" name="experience id" id="expe_id">
+          </label>
+
+                
+          <label>Alpaca ID
+            <input type="number" name="alpaca id" id="alpa_id">
+          </label>
+  
+          <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
+  
+        </fieldset>
+      </form>      
     </main>
 
     <footer>
         <p>&copy; Copyright 2021 Beaver Bytes</p> 
     </footer>
-
+    
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Orders</h1>
+        <!--Horizontal Menu-->
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Manage Orders</a></li>
+                <li><a href="customers.html"> Manage Customers</a></li>
+                <li><a href="experiences.html"> Manage Experiences</a></li>
+                <li><a href="alpacas.html">Manage Alpacas</a></li>
+                <li><a href="experiences_alpacas.html">Manage Experiences-Alpacas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+              <legend> Order Information</legend>
+                  
+              <label>Customer ID
+                <input type="number" name="customer id" id="cus_id">
+              </label>
+
+                    
+              <label>Experiences-Alpacas
+                <input type="number" name="ea id" id="ea_id">
+              </label>
+
+                    
+              <label>Ticket Quantity
+                <input type="number" name="ticket quantity" id="ticket_qty">
+              </label>
+
+              <label>Order Date
+                <input type="date" name="order date" id="order_date">
+              </label>
+
+
+              <label>Order Subtotal
+                <input type="number" name="order subtotal" id="subtotal">
+              </label>
+      
+              <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
+      
+            </fieldset>
+          </form>      
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+    </footer>
+    
+</body>
+</html>

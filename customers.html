@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Customers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Customers</h1>
+        <!--Horizontal Menu-->
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Manage Orders</a></li>
+                <li><a href="customers.html"> Manage Customers</a></li>
+                <li><a href="experiences.html"> Manage Experiences</a></li>
+                <li><a href="alpacas.html">Manage Alpacas</a></li>
+                <li><a href="experiences_alpacas.html">Manage Experiences-Alpacas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+              <legend> Customer Information</legend>
+                  
+              <label>First Name
+                <input type="text" name="first name" id="fname">
+              </label>
+
+              <label>Last Name
+                <input type="text" name="last name" id="lname">
+              </label>
+
+              <label>Email
+                <input type="email" name="email" id="email">
+              </label>
+      
+              <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
+      
+            </fieldset>
+          </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>superguy@thedailyplanet.com</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Bruce</td>
+                    <td>Wayne</td>
+                    <td>bwayne@wayneenterprises.com</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Diana</td>
+                    <td>Themyscira</td>
+                    <td>wwoman@jleague.org</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Hal</td>
+                    <td>Jordan</td>
+                    <td>thegreenlanturn@jleague.org</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+    </footer>
+    
+</body>
+</html>

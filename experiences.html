@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Manage Experiences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Experiences</h1>
+        <!--Horizontal Menu-->
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="orders.html">Manage Orders</a></li>
+                <li><a href="customers.html"> Manage Customers</a></li>
+                <li><a href="experiences.html"> Manage Experiences</a></li>
+                <li><a href="alpacas.html">Manage Alpacas</a></li>
+                <li><a href="experiences_alpacas.html">Manage Experiences-Alpacas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+              <legend> Experience Information</legend>
+                  
+              <label>Experience Name
+                <input type="text" name="experience name" id="exp_name">
+              </label>
+
+              <label>Experience Price
+                <input type="number" name="experience price" id="exp_price">
+              </label>
+      
+              <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
+      
+            </fieldset>
+        </form>
+                <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tour</td>
+                    <td>$25.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Photo</td>
+                    <td>$15.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Petting</td>
+                    <td>$20.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+    </footer>
+    
+</body>
+</html>
