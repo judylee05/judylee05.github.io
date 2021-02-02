@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Customers</title>
+    <title>Manage Payments</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Manage Customers</h1>
+        <h1>Manage Payments</h1>
         <!--Horizontal Menu-->
         <nav>
             <ul class="nav">
@@ -26,70 +26,46 @@
     <main>
         <form action="#" method="POST">
             <fieldset>
-              <legend> Customer Information</legend>
-                  
-              <label>First Name
-                <input type="text" name="first name" id="fname">
+              <legend> Payment Information </legend>
+
+              <label>Payment Type
+                <input type="text" name="pay type" id="pay_type">
               </label>
 
-              <label>Last Name
-                <input type="text" name="last name" id="lname">
-              </label>
-
-              <label>Email
-                <input type="email" name="email" id="email">
-              </label>
-      
               <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
-      
+
             </fieldset>
-          </form>
+        </form>
         <br>
         <table>
             <thead>
                 <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Update</th>
-                    <th>Delete</th>
+                    <th>Payment Type</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Clark</td>
-                    <td>Kent</td>
-                    <td>superguy@thedailyplanet.com</td>
+                    <td>Cash</td>
                     <td><button>Update</button></td>
                     <td><button>Delete</button></td>
                 </tr>
                 <tr>
-                    <td>Bruce</td>
-                    <td>Wayne</td>
-                    <td>bwayne@wayneenterprises.com</td>
+                    <td>Credit Card</td>
                     <td><button>Update</button></td>
                     <td><button>Delete</button></td>
                 </tr>
                 <tr>
-                    <td>Diana</td>
-                    <td>Themyscira</td>
-                    <td>wwoman@jleague.org</td>
-                    <td><button>Update</button></td>
-                    <td><button>Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Hal</td>
-                    <td>Jordan</td>
-                    <td>thegreenlanturn@jleague.org</td>
+                    <td>Paypal</td>
                     <td><button>Update</button></td>
                     <td><button>Delete</button></td>
                 </tr>
             </tbody>
         </table>
     </main>
+
     <footer>
-        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+        <p>&copy; Copyright 2021 Beaver Bytes</p>
     </footer>
-    
+
 </body>
 </html>

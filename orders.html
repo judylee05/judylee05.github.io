@@ -15,6 +15,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="orders.html">Manage Orders</a></li>
                 <li><a href="customers.html"> Manage Customers</a></li>
+                <li><a href="payments.html"> Manage Payments</a></li>
                 <li><a href="experiences.html"> Manage Experiences</a></li>
                 <li><a href="alpacas.html">Manage Alpacas</a></li>
                 <li><a href="experiences_alpacas.html">Manage Experiences-Alpacas</a></li>
@@ -25,35 +26,70 @@
     <main>
         <form action="#" method="POST">
             <fieldset>
-              <legend> Order Information</legend>
-                  
-              <label>Customer ID
-                <input type="number" name="customer id" id="cus_id">
-              </label>
-
-                    
-              <label>Experiences-Alpacas
-                <input type="number" name="ea id" id="ea_id">
-              </label>
-
-                    
-              <label>Ticket Quantity
-                <input type="number" name="ticket quantity" id="ticket_qty">
-              </label>
-
-              <label>Order Date
-                <input type="date" name="order date" id="order_date">
-              </label>
-
-
-              <label>Order Subtotal
-                <input type="number" name="order subtotal" id="subtotal">
-              </label>
-      
-              <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
-      
+                <legend> Order Information</legend>
+                <label>Customer ID
+                    <input type="number" name="customer id" id="cus_id">
+                </label>
+                <label>Experiences-Alpaca
+                    <select name="ea_choice" id="ea_choice">
+                        <option value="1">Tour with Cupcake</option>
+                        <option value="2">Photo with Cupcake</option>
+                        <option value="3">Petting with Cupcake</option>
+                        <option value="4">Tour with Tiramisu</option>
+                        <option value="5">Photo with Tiramisu</option>
+                        <option value="6">Petting with Tiramisu</option>
+                    </select>
+                <label>Payment Type
+                    <select name="pay_type" id="pay_type">
+                        <option value="1">Cash</option>
+                        <option value="2">Credit Card</option>
+                        <option value="3">Paypal</option>
+                    </select>
+                </label>
+                <label>Ticket Quantity
+                    <input type="number" name="ticket quantity" id="ticket_qty">
+                </label>
+                <label>Order Date
+                    <input type="date" name="order date" id="order_date">
+                </label>
+                <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
             </fieldset>
-          </form>      
+        </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Experience + Alpaca</th>
+                    <th>Payment Type</th>
+                    <th>Ticket Quantity</th>
+                    <th>Order Date</th>
+                    <th>Order Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clark Kent</td>
+                    <td>Photo with Cupcake</td>
+                    <td>Paypal</td>
+                    <td>2</td>
+                    <td>2021-01-21</td>
+                    <td>$30.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Bruce Wayne</td>
+                    <td>Tour with Tiramisu</td>
+                    <td>Credit Card</td>
+                    <td>4</td>
+                    <td>2021-01-21</td>
+                    <td>$100.00</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
