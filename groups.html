@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Alpacas</title>
+    <title>Manage Groups</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Manage Alpacas</h1>
+        <h1>Manage Groups</h1>
         <!--Horizontal Menu-->
         <nav>
             <ul class="nav">
@@ -22,48 +22,49 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <form action="#" method="POST">
             <fieldset>
-              <legend> Alpaca Information </legend>
-                  
-              <label>Alpaca Name
-                <input type="text" name="alpaca name" id="alp_name">
+              <legend> Group Information </legend>
+
+              <label>Group Name
+                <input type="text" name="group name" id="group_name">
               </label>
 
-              <label>Age
-                <input type="number" name="alpaca age" id="alp_age">
+              
+              <label>Discount
+                <input type="text" name="discount" id="discount">
               </label>
 
-              <label>Breed
-                <input type="text" name="breed" id="breed">
-              </label>
-      
               <input type="submit" value="SUBMIT" class = "button" id="submitBtn">
-      
+
             </fieldset>
-          </form>
+        </form>
         <br>
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Breed</th>
+                    <th>Group Name</th>
+                    <th>Discount</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Cupcake</td>
-                    <td>12</td>
-                    <td>Hyacaya</td>
+                    <td>Veterans</td>
+                    <td>15%</td>
                     <td><button>Update</button></td>
                     <td><button>Delete</button></td>
                 </tr>
                 <tr>
-                    <td>Tiramisu</td>
-                    <td>15</td>
-                    <td>Suri</td>
+                    <td>Seniors</td>
+                    <td>15%</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Students</td>
+                    <td>15%</td>
                     <td><button>Update</button></td>
                     <td><button>Delete</button></td>
                 </tr>
@@ -72,8 +73,8 @@
     </main>
 
     <footer>
-        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+        <p>&copy; Copyright 2021 Beaver Bytes</p>
     </footer>
-    
+
 </body>
 </html>
